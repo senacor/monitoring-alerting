@@ -17,3 +17,7 @@ Further:
 - The Grafana UI can be reached under localhost:3000 (login credentials: username 'admin', password 'foobar'). The configuration for Grafana is defined in [config.monitoring](./grafana/config.monitoring).
 
 - Prometheus also exposes a user interface which may be reached under localhost:9090. 
+
+- A sample wordpress application is accessible via localhost:80.
+
+- Cadvisor monitors running docker containers and exposes its UI under localhost:8080.

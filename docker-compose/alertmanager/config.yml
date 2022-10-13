@@ -3,8 +3,9 @@ route:
 
 receivers:
   - name: 'slack'
-#       slack_configs:
-#           - send_resolved: true
-#             username: '<username>'
-#             channel: '#<channel-name>'
-#             api_url: '<incomming-webhook-url>'
+    slack_configs:
+    - send_resolved: true
+      channel: '#integrationsplattform-monitoring-alerting'
+      api_url: 'https://hooks.slack.com/services/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'
+      text: 'Greetings from alertmanager'
+      title: 'Hello!'

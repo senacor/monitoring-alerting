@@ -17,6 +17,14 @@ scrape_configs:
       - targets:
         - node-exporter:9100
 
+  - job_name: 'Spring Boot Application input'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 2s
+    static_configs:
+      - targets: [ 'host.docker.internal:8080' ]
+        labels:
+          application: 'SpringBoot Example Exporter'
+
 alerting:
   alertmanagers:
     - static_configs:
